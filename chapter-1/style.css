@@ -1,0 +1,317 @@
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      color: black;
+      line-height: 1.6;
+  }
+
+  :root {
+      --main-color: rgb(173, 28, 28);
+  }
+
+  .site-header {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+  }
+
+  .site-header .logo-text {
+      font-size: 1.6rem;      
+      font-weight: bold;     
+      color: rgb(173, 28, 28);          
+      font-family: serif;    
+  }
+
+  .site-header .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 60%;
+      gap: 10px; 
+  }
+
+  .site-header .logo-image {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+  }
+
+  .global-nav {
+      width: 100%;
+      background-color: rgb(173, 28, 28);
+      box-sizing: border-box; 
+      display: flex;
+      justify-content: center;
+  }
+
+  .global-nav li {
+      flex: 1; 
+      text-align: center;
+      box-sizing: border-box;
+      border-right: 1px solid white; 
+  }
+
+  .global-nav li:first-child {
+      border-left: 1px solid white;
+  }
+
+  .global-nav li:last-child {
+      border-right: none;
+  }
+
+  .global-nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 60%;
+      box-sizing: border-box;
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+  }
+
+  .global-nav a {
+      display: block;
+      padding: 10px 0;
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+  }
+
+  .section-title {
+      width: 100%;
+      background-color: var(--main-color);
+      color: white;
+      font-size: 14px;
+      padding: 8px 12px;
+      margin: 0 0 15px 0;
+      display: inline-block;
+      font-weight: normal;
+      box-sizing: border-box;
+  }
+
+  .values-list,
+  .company-table,
+  .staff-card h3 {
+      font-family: serif;
+  }
+
+  .values-list {
+      padding-left: 20px;
+      margin: 0 0 20px 0;
+  }
+
+  .staff-card img {
+      width: 100%;
+      min-width: 120px; 
+      height: auto;
+      object-fit: cover;
+      display: block;
+  }
+
+  .company-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      font-size: 14px;
+  }
+
+  .company-table th, 
+  .company-table td {
+      padding: 8px 10px;
+      text-align: left;
+  }
+
+  .company-table th {
+      width: 25%;
+      font-weight: bold;
+  }
+
+  .news-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px 0;
+      border: none;
+      display: flex;          
+      flex-direction: column; 
+      align-items: flex-start;
+  }
+
+  .news-list li {
+      display: inline-block;  
+      border-bottom: 1px solid black; 
+  }
+
+  .news-list a {
+      display: block;
+      padding: 6px 4px; 
+      color: black;
+      text-decoration: none;
+      font-size: 14px;
+  }
+
+  .banner-box img {
+      width: 60%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+  }
+
+  .site-footer {
+      border-top: 2px solid;
+      padding: 20px 0 0 0;
+      text-align: center;
+      color: rgb(173, 28, 28);
+  }
+
+  .footer-icon img {
+      width: 40px;
+      height: auto;
+      margin-bottom: 15px;
+  }
+
+  .copyright {
+      background-color: rgb(173, 28, 28);
+      color: white;
+      font-size: 10px;
+      padding: 8px 0;
+  }
+
+
+/* PC表示用の画面スタイル (860px以上) */
+@media screen and (min-width: 860px) {
+    .container {
+      width: 60%;
+      margin: 30px auto;
+      display: flex;
+      gap: 20px; 
+      box-sizing: border-box;
+    }
+
+    .main-content {
+      flex: 1;
+      box-sizing: border-box;
+    }
+
+    .sidebar {
+      width: 160px; 
+      flex-shrink: 0;
+    }
+
+    .banner-box {
+      width: 100%;
+    }
+
+    .banner-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    
+    .staff-flex {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 25px;
+    }
+
+    .staff-card {
+      flex: 1;
+    }
+
+    .staff-card h3 {
+      font-size: 14px;
+      margin: 10px 0 5px 0;
+    }
+
+    .staff-card p {
+      font-size: 12px;
+      margin: 0;
+    }
+}
+
+/* モバイル表示用のスタイル (859px以下) */
+@media screen and (max-width: 859px) {
+    .container {
+      width: 95%; 
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column; 
+    }
+
+    .staff-flex {
+      display: flex;
+      flex-direction: column;
+      gap: 24px; 
+      margin-bottom: 25px;
+      width: 100%;
+    }
+
+    .staff-card {
+      display: flex !important;
+      flex-direction: row !important; 
+      gap: 16px; 
+      align-items: flex-start; 
+      width: 100%;
+    }
+
+    .staff-card img {
+      width: 110px; 
+      height: auto;
+      flex-shrink: 0; 
+    }
+
+    .staff-text {
+      flex: 1; 
+      min-width: 0; 
+      display: flex;
+      flex-direction: column; 
+    }
+
+    .staff-card h3 {
+      font-size: 15px;
+      font-weight: bold;
+      margin: 0 0 6px 0; 
+      padding: 0;
+      line-height: 1.3;
+    }
+
+    .staff-card p {
+      font-size: 13px;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6; 
+      word-break: break-all; 
+      overflow-wrap: break-word; 
+    }
+
+    .main-content .section-box:last-of-type .news-list {
+      list-style: none;   
+      padding: 0;        
+      margin: 0 auto;
+      display: flex;      
+      flex-direction: column; 
+      align-items: center;    
+      gap: 15px;          
+    }
+
+    .sidebar {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .banner-box {
+      width: 100%;
+      display: flex;         
+      justify-content: center; 
+    }
+
+    .banner-box img {
+      max-width: 200px;       
+      width: 100%;
+      height: auto;
+    }
+  }

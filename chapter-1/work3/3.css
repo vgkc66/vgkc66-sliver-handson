@@ -1,2 +1,14 @@
 /* ここから処理を記述 */
+.header h1 {
+  background-color: red;
+  width: 130px;
+  text-align: center;
+}
 
+.mainBox {
+  background-color: red;
+  height: 200px;
+  width: 500px;
+  padding-top: 50px;
+  padding-left: 30px;
+}

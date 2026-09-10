@@ -1,2 +1,21 @@
 /* ここから処理を記述 */
+.header {
+  background-color: beige;
+  height: 100px;
+}
 
+.header img {
+    height: 90%;
+}
+
+.header h1 {
+    margin-left: 20%;
+}
+
+.header ul {
+    margin-left: 20%;
+}
+
+.header ul li {
+    margin-right: 30px;
+}               
